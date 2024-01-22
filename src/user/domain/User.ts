@@ -1,4 +1,4 @@
-export type User = {
+export interface User {
   id: string
   username: string
   avatar: string
@@ -9,8 +9,4 @@ export type User = {
   transactions_quantity: number
   isAllowed: boolean
   created_timestamp: string
-}
-
-export type Response = {
-  users: User[]
 }
