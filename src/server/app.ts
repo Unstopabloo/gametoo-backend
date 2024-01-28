@@ -4,7 +4,7 @@ import users from '../user/infra/routes.ts'
 
 const app = new Hono().basePath('/api/v1')
 
-app.get('/', c => c.json({ message: 'Hello BEB' }))
+app.get('/', c => c.text('Hello World!'))
 app.route('/users', users)
 
 showRoutes(app)

@@ -1,5 +1,5 @@
 import { serve } from '@hono/node-server'
-import app from './http/app.ts'
+import app from './server/app.ts'
 import dotenv from 'dotenv'
 dotenv.config()
 
